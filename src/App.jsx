@@ -3,9 +3,9 @@ import "./App.css";
 
 const App = () => {
 	const txt_color = useRef(null);
+	const [color, setColor] = useState("#000000");
 	const hexadecimal = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
 	let colorHex = "#";
-	const [color, setColor] = useState("#000000");
 
 	const changeColor = () => {
 		for (let i = 0; i < 6; i++) {
@@ -14,7 +14,7 @@ const App = () => {
 		}
 		setColor(colorHex);
 		txt_color.current.style.color = colorHex;
-		document.body.style.backgroundColor = colorHex;
+		document.body.style.backgroundImage = `linear-gradient(#000, ${colorHex})`;
 	};
 
 	const copyClipboard = () => {
