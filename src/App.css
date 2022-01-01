@@ -1,0 +1,28 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 2em;
+	color: #fff;
+	width: 40%;
+	padding: 1em;
+	margin-top: 5em;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #1d1d1d;
+}
+
+.container p {
+	margin: 0.5em;
+	font-size: 1.5em;
+}
+
+.container button {
+	border: 0;
+	font-size: 1.5em;
+	color: #1d1d1d;
+	margin: 0.1em;
+	padding: 0.1em;
+	cursor: pointer;
+}
