@@ -7,8 +7,6 @@ const App = () => {
 	let colorHex = "#";
 	const [color, setColor] = useState("#000000");
 
-	console.log(txt_color.current);
-
 	const changeColor = () => {
 		for (let i = 0; i < 6; i++) {
 			let random = Math.floor(Math.random() * hexadecimal.length);
